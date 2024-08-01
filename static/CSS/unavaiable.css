@@ -1,0 +1,213 @@
+
+/* unavilable.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .menu-btn {
+    display: none;
+    font-size: 1.5rem;
+}
+
+nav .menu-btn i {
+    cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+.data {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.data h1 {
+    color: #333;
+}
+
+.form {
+    margin-bottom: 1rem;
+}
+
+.form select, 
+.form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.form select {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+.form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tab {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.tab .div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.tab ::-webkit-scrollbar {
+    display: none;
+}
+.tab {
+    overflow: auto; /* Ensure the content is scrollable */
+    scrollbar-width: none; /* Hide scrollbar */
+}
+.tab {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    overflow: -moz-scrollbars-none; /* Hide scrollbar in older Firefox */
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+table td a:hover {
+    color: #0056b3;
+}
+button.opt {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.aaa{
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+button.home{
+    background-color: white;
+    color: #0056b3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    border: none;
+}
+button.home:hover{
+    background-color: #0056b3;
+    color: white;
+}
+
+button.opt:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+
+    .data {
+        width: 90%;
+    }
+
+    .tab {
+        width: 90%;
+    }
+}

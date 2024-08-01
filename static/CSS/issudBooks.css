@@ -1,0 +1,380 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    transition: ease 0.6s ;
+}
+nav .logo{
+    font-size: 43px;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 014px 10px;
+    transition: all 0.4s;
+}
+nav ul li a:hover{
+    background-color: rgb(87, 125, 250);
+}
+
+
+button:active{
+    background-color: blue;
+    color:  white;
+}
+button{
+    width: 150px;
+    border: none;
+    background: transparent;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.home{
+    background-color: rgb(57, 126, 255);
+}
+.logo{
+    color: rgb(50, 150, 231);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+input[type="submit"]{
+    border-radius:6px;
+    background-color: rgb(34, 117, 212);
+    border: 0;
+    width: 100px;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    margin: 10px;
+    height: 30px;
+    transition: 0.4s ease;
+}
+input[type="submit"]:hover{
+    background-color:#022994;
+    color: #ffffff;
+}
+h1{
+    color: #000c2c;
+}
+select{
+    width:200px;
+    border-radius:6px;
+    background-color: rgb(135, 172, 214);
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    margin: 10px;
+    padding-left: 6px;
+    font-weight: 500;
+    height: 30px;
+    transition: 0.4s ease;
+}
+select:hover{
+    background-color:#2c57e4;
+    color: #ffffff;
+}
+.tab{
+    text-align: center;
+    margin-top: 70px;
+    width: 1354px;
+}
+tbody tr:nth-child(even) {
+    background-color: #206eff46;
+ }
+ th{
+    background-color: rgba(0, 162, 255, 0.507);
+    color:black;
+    height: 40px;
+ }
+tr{
+    padding: 6px;
+}
+a{
+    text-decoration: none;
+}
+th, td{
+    overflow: scroll;
+    text-align: center;
+    width: 160px;
+}
+table{
+    width: 1340px;
+    margin-left: 6px;
+}
+td{
+    padding: 4px;
+    max-width: 230px;
+    min-width: 230px;
+}
+.div{
+    overflow-x:scroll;
+    overflow-y: visible;
+}
+
+
+
+
+nav .menu-btn i{
+    display: none;
+
+}
+#click:checked ~ul{
+    left: 0%;
+}
+#click{
+    display: none;
+}
+nav .menu-btn i:hover{
+    color: blue;
+    cursor: pointer;
+    font-size: 22px;
+}
+@media(max-width:991px){
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgba(255, 255, 255, 0.863);
+        width: 100%;
+        height: 40vh;
+        display: block;
+        text-align: center;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    .tab{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .a{
+        margin-left: 40px;
+    }
+}
+     */
+
+/* issuedBooks.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .menu-btn {
+    display: none;
+    font-size: 1.5rem;
+}
+
+nav .menu-btn i {
+    cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+.tab {
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.tab .a {
+    margin-bottom: 1rem;
+}
+
+.tab .a select, 
+.tab .a input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.tab .a select {
+    width: 200px;
+    margin-right: 1rem;
+    margin-bottom: 8px;
+}
+
+.tab .a input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.tab .a input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tab .div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.tab ::-webkit-scrollbar {
+    display: none;
+}
+.tab {
+    overflow: auto; /* Ensure the content is scrollable */
+    scrollbar-width: none; /* Hide scrollbar */
+}
+.tab {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    overflow: -moz-scrollbars-none; /* Hide scrollbar in older Firefox */
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+table td a:hover {
+    color: #0056b3;
+}
+button.opt {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.aaa{
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+button.home{
+    background-color: white;
+    color: #0056b3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    border: none;
+}
+button.home:hover{
+    background-color: #0056b3;
+    color: white;
+}
+
+button.opt:hover {
+    background-color: white;
+    color: #007bff;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+
+    .tab {
+        width: 90%;
+    }
+}

@@ -1,0 +1,114 @@
+
+
+/* viewBook.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.data {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.data h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.data p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.aaa, .bbb {
+    margin: 1rem 0;
+    padding: 6px;
+    background-color: #007bff;
+    width: 20%;
+    border-radius: 4px;
+}
+.aba{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+.aaa a, .bbb a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.aaa a:hover, .bbb a:hover {
+    color: #0056b3;
+}
+.tab .div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.tab ::-webkit-scrollbar {
+    display: none;
+}
+.tab {
+    overflow: auto; /* Ensure the content is scrollable */
+    scrollbar-width: none; /* Hide scrollbar */
+}
+.tab {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    overflow: -moz-scrollbars-none; /* Hide scrollbar in older Firefox */
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+table td a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .tab {
+        width: 90%;
+    }
+    .aaa, .bbb{
+        width: 40%;
+    }
+}

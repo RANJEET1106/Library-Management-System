@@ -1,0 +1,268 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    padding-top: 60px;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow:clip;
+}
+h1{
+    margin-bottom: 40px; 
+}
+.aaa, .bbb{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    height: 30px;
+    width: 400px;
+    background-color: rgb(58, 137, 255);
+    margin-bottom: 20px;
+}
+.aaa a, .bbb a{
+    color: white;
+}
+.data{
+    text-align:left;
+    width: 50%;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+}
+
+.form{
+    height: 70vh;
+    text-align: left;
+    margin-left: 100px;
+    background-color: white;
+
+}
+lable, input{
+    display: block;
+}
+h1{
+    color: #0a053a7c;
+    padding-left: 100px;
+    width: 100%;
+}
+input{
+    width: 80%;
+    appearance: none;
+    border: none;
+    font-weight: 500;
+    -moz-appearance: textfield;
+    outline: none;
+    border-bottom: .1em solid #4486eb;
+    background: transparent;
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: #0a053a;
+    margin-bottom: 20px;
+    max-width: 400px;
+    min-width: 400px;
+    
+}
+input[type="submit"], button{
+    width:400px;
+    border-radius:25px;
+    background-color: rgb(34, 117, 212);
+    border: 0;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+    height: 40px;
+    transition: 0.4s ease;
+}
+
+input[type="submit"]:hover, button:hover{
+    background-color:#022994;
+    color: #ffffff;
+}
+select{
+    width: 90%;
+    max-width: 400px;
+    min-width: 400px;
+    padding: 1em;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #4486eb;
+    margin-bottom: 40px;
+}
+
+.a{
+    text-align: center;
+    margin-right:80px;
+    font-weight: 500;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+
+}
+
+.img{
+    height: 70vh;
+    width: 500px;
+    margin-top: 00px;
+    
+    margin-left: 80px;
+    background-color: #022994;
+    background: url("../images/hh.jpg") no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 0;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 200px;
+    min-height: 300px;
+    overflow-x: clip;
+}
+.exp{
+    display: flex;
+}
+
+@media(max-width:991px){
+    body, img{
+        display: block;
+        margin: 0 ;
+    }
+    .data{
+        
+        padding: 8%;
+        margin: 0;
+    }
+    .form{
+        margin: 0;
+        padding: 0;
+    }
+    .img{
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+    }
+} */
+
+/* deleteUser.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.data {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    padding: 2rem;
+    position: relative;
+}
+
+.data h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    margin-top: 1rem;
+}
+
+.form div {
+    margin-bottom: 1rem;
+}
+
+.form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form select {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    background-color: #3459ff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0024c4;
+}
+
+.aaa {
+    margin-top: 1rem;
+}
+
+.aaa a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.aaa a:hover {
+    color: #0056b3;
+}
+
+.img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+    .data {
+        padding: 1.5rem;
+    }
+
+    .form input[type="text"],
+    .form input[type="number"],
+    .form select {
+        width: calc(100% - 1rem);
+        padding: 0.5rem;
+    }
+
+    .form input[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+}

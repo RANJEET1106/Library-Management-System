@@ -1,0 +1,113 @@
+/* rtrnbook.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.data {
+    height: 90vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    padding: 2rem;
+    position: relative;
+}
+
+.data h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    margin-top: 1rem;
+}
+
+.form div {
+    margin-bottom: 1rem;
+}
+
+.form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    background-color: #2268ff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0c00ad;
+}
+
+.aaa {
+    margin-top: 1rem;
+}
+
+.aaa a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.aaa a:hover {
+    color: #0056b3;
+}
+
+.img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+    .data {
+        padding: 1.5rem;
+    }
+
+    .form input[type="text"],
+    .form input[type="number"] {
+        width: calc(100% - 1rem);
+        padding: 0.5rem;
+    }
+
+    .form input[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+}

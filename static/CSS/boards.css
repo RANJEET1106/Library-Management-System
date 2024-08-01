@@ -1,0 +1,161 @@
+
+/* boards.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+button.opt {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+button.home{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    background-color: white;
+    color: #0056b3;
+}
+button.home:hover{
+    background-color: #0056b3;
+    color: white;
+}
+
+button.opt:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .menu-btn {
+    display: none;
+    font-size: 1.5rem;
+}
+
+nav .menu-btn i {
+    cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+.data {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head h1 {
+    color: #333;
+}
+
+.head h1 span {
+    color: #007bff;
+}
+
+.user p,
+.lib-bio p {
+    margin: 0.5rem 0;
+    color: #333;
+    text-align: left;
+}
+
+.user p .a,
+.lib-bio p .a {
+    font-weight: bold;
+}
+
+hr {
+    border: 0.5px solid #ddd;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+
+    .data {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 1.5rem;
+        margin-top: unset;
+    }
+}

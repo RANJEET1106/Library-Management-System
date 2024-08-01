@@ -1,0 +1,97 @@
+/* logout.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logout {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.164);
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+.form label {
+  font-size: 1.25rem;
+  color: #333;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.in, .out {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.in {
+  background-color: #295bff;
+  color: #fff;
+}
+
+.out {
+  background-color: #295bff;
+  color: #fff;
+}
+
+.in:hover {
+  background-color: #001c97;
+}
+
+.out:hover {
+  background-color: #001c97;
+}
+
+img[alt=""] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logout {
+      padding: 1.5rem;
+  }
+
+  .input {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .in, .out {
+      margin-bottom: 1rem;
+      width: 60%;
+  }
+
+  .in:last-child, .out:last-child {
+      margin-bottom: 0;
+  }
+}
