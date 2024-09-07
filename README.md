@@ -9,6 +9,10 @@
 
 Manual process of keeping student records, book records, account details, managing employee is very difficult. There are various problems also faced by the student in library such as finding any particular book, information whether book is available or not, for what time this book will be available, searching of books using ISBN number etc. To eliminate this manual system, **Library Management System** has been developed.
 
+**You can check the screenshots of User Interface [here](https://github.com/RANJEET1106/Library-Management-System/tree/main/Screenshots).**
+
+**To download the presentation, [click here](https://github.com/RANJEET1106/Library-Management-System/blob/main/presentation.pdf).**
+
 ## Core Features
 
 ![admin](https://img.shields.io/badge/admin-login-teal.svg?style=flat-square) 
@@ -86,23 +90,24 @@ Manual process of keeping student records, book records, account details, managi
 - **Backend and Database**
     - RANJEET DESHMUKH 
        - [![GMAIL](https://img.shields.io/badge/gmail-%40ranjeet_deshmukh-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=ranjeetv1106@gmail.com)
-        
-        - ![LINKEDIN](https://img.shields.io/badge/connect-%40ranjeet_deshmukh-green?style=plastic&logo=linkedin&labelColor=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Franjeet-deshmukh-b9b114266)
-        - ![GITHUB](https://img.shields.io/badge/follow-%40ranjeet1106-white?style=plastic&logo=github&labelColor=black&link=https%3A%2F%2Fgithub.com%2FRANJEET1106
-        )
+        - [![LINKEDIN](https://img.shields.io/badge/connect-%40ranjeet_deshmukh-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/ranjeet-deshmukh-b9b114266)
+        - [![GITHUB](https://img.shields.io/badge/follow-%40ranjeet1106-white?style=plastic&logo=github&labelColor=black)](https://github.com/RANJEET1106)
 
     - ANISH BHUJBAl
-        - ![GMAIL](https://img.shields.io/badge/gmail-%40anish_bhujbal-grey?style=plastic&logo=gmail&labelColor=white&link=mailto%3Aanishbhujbal77%40gmail.com
-        )
-        - ![LINKEDIN](https://img.shields.io/badge/connect-%40anish_bhujbal-green?style=plastic&logo=linkedin&labelColor=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fanish-bhujbal-2aa36b276)
+        - [![GMAIL](https://img.shields.io/badge/gmail-%40anish_bhujbal-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=anishbhujbal77@gmail.com)
+        - [![LINKEDIN](https://img.shields.io/badge/connect-%40anish_bhujbal-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/anish-bhujbal-2aa36b276)
 
 - **Frontend**
     - SHUBHAM DAREKAR
-        - ![GMAIL](https://img.shields.io/badge/gmail-%40shubham_darekar-grey?style=plastic&logo=gmail&labelColor=white&link=mailto%3Adarekarshubham2005%40gmail.com
-        )
-        - ![LINKEDIN](https://img.shields.io/badge/connect-%40shubham_darekar-green?style=plastic&logo=linkedin&labelColor=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fshubham-darekar-236424257)
-        - ![GITHUB](https://img.shields.io/badge/follow-%40Shubham0D4-white?style=plastic&logo=github&labelColor=black&link=https%3A%2F%2Fgithub.com%2FShubham0D4
-        )
+        - [![GMAIL](https://img.shields.io/badge/gmail-%40shubham_darekar-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=darekarshubham2005@gmail.com)
+        - [![LINKEDIN](https://img.shields.io/badge/connect-%40shubham_darekar-green?style=plastic&logo=linkedin&labelColor=blue)]( https://www.linkedin.com/in/shubham-darekar-236424257)
+        - [![GITHUB](https://img.shields.io/badge/follow-%40Shubham0D4-white?style=plastic&logo=github&labelColor=black)](https://github.com/Shubham0D4)
+
+    - SUSHANT ZAMBARE
+        - [![GMAIL](https://img.shields.io/badge/gmail-%40sushant_zambare-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=sushantzambare1234@gmail.com)
+        - [![LINKEDIN](https://img.shields.io/badge/connect-%40sushant_zambare-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/sushant-zambare-7711b2257)
+        - [![GITHUB](https://img.shields.io/badge/follow-%40sushant--zambare-white?style=plastic&logo=github&labelColor=black)](https://github.com/Sushant-Zambare)
+
 
 ## Oh, Thanks!
 
