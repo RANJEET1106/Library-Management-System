@@ -85,7 +85,7 @@ Manual process of keeping student records, book records, account details, managi
 
 - **Backend and Database**
     - RANJEET DESHMUKH 
-        - [![GMAIL](https://img.shields.io/badge/gmail-%40ranjeet_deshmukh-grey?style=plastic&logo=gmail&labelColor=white)](message=:Aranjeetv1106@gmail.com)
+       - [![GMAIL](https://img.shields.io/badge/gmail-%40ranjeet_deshmukh-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=ranjeetv1106@gmail.com)
         
         - ![LINKEDIN](https://img.shields.io/badge/connect-%40ranjeet_deshmukh-green?style=plastic&logo=linkedin&labelColor=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Franjeet-deshmukh-b9b114266)
         - ![GITHUB](https://img.shields.io/badge/follow-%40ranjeet1106-white?style=plastic&logo=github&labelColor=black&link=https%3A%2F%2Fgithub.com%2FRANJEET1106
