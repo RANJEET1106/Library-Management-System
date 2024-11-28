@@ -1,6 +1,6 @@
 from flask import Flask, redirect, request, render_template, url_for#, flash
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import func, and_
+from sqlalchemy import func, and_,text
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user, login_required
 #from sqlalchemy.exc import IntegrityError
@@ -164,9 +164,9 @@ def addBook():
 def viewBook(isbn):
     book=db.session.query(Books).filter_by(isbn=isbn).first()
     count = db.session.query(func.count(Issued.isbnissue)).filter_by(isbnissue=isbn).scalar()
-    issuers=db.session.execute('''select erp,name,role,date,status 
+    issuers=db.session.execute(text('''select erp,name,role,date,status 
                                from user,issued_books 
-                               where isbnissue= :isbn and erpissue=erp''',
+                               where isbnissue= :isbn and erpissue=erp'''),
                                {'isbn':isbn})
     return render_template('admin/viewBook.html',book=book,issuers=issuers,count=count)
 
@@ -174,9 +174,9 @@ def viewBook(isbn):
 @login_required
 def bookHistory(isbn):
     book=db.session.query(Books).filter_by(isbn=isbn).first()
-    issuers=db.session.execute('''select erp,name,role,date,status 
+    issuers=db.session.execute(text('''select erp,name,role,date,status 
                                from user,history
-                               where isbnissue= :isbn and erpissue=erp''',
+                               where isbnissue= :isbn and erpissue=erp'''),
                                {'isbn':isbn})
     return render_template('admin/bookHistory.html',book=book,issuers=issuers)
 
@@ -272,9 +272,9 @@ def register():
 def viewUser(erp):
     user=db.session.query(User).filter_by(erp=erp).first()
     count = db.session.query(func.count(Issued.erpissue)).filter_by(erpissue=erp).scalar()
-    books=db.session.execute('''select isbn,book_name,author,publication,date,status 
+    books=db.session.execute(text('''select isbn,book_name,author,publication,date,status 
                              from books,issued_books 
-                             where isbnissue=isbn and erpissue= :erp ''',
+                             where isbnissue=isbn and erpissue= :erp '''),
                              {'erp':erp} )
     return render_template('admin/viewUser.html',user=user,books=books,count=count)
 
@@ -282,9 +282,9 @@ def viewUser(erp):
 @login_required
 def userHistory(erp):
     user=db.session.query(User).filter_by(erp=erp).first()
-    books=db.session.execute('''select isbn,book_name,author,publication,date,status 
+    books=db.session.execute(text('''select isbn,book_name,author,publication,date,status 
                              from books,history
-                             where isbnissue=isbn and erpissue= :erp ''',
+                             where isbnissue=isbn and erpissue= :erp '''),
                              {'erp':erp} )
     return render_template('admin/userHistory.html',user=user,books=books)   
 
@@ -325,27 +325,27 @@ def deleteUser(erp):
 @login_required
 def issued_books():
     if request.method=='GET':
-        books=db.session.execute('''select erp,name,isbn,book_name,author,publication,date 
+        books=db.session.execute(text('''select erp,name,isbn,book_name,author,publication,date 
             from books,issued_books,user
             where isbnissue=isbn and erpissue=erp and status='Issued' 
-            order by date asc''')
+            order by date asc'''))
         return render_template ('admin/issuedBooks.html',books=books)
     
     if request.method=='POST':
         type=request.form['filter']
 
         if(type=='all_issued'):
-            books=db.session.execute('''select erp,name,isbn,book_name,author,publication,date 
+            books=db.session.execute(text('''select erp,name,isbn,book_name,author,publication,date 
             from books,issued_books,user
             where isbnissue=isbn and erpissue=erp and status='Issued' 
-            order by date asc''')
+            order by date asc'''))
             return render_template ('admin/issuedBooks.html',books=books)
         
         if(type=='unavilable'):
-            books=db.session.execute('''select isbn,book_name,author,publication
+            books=db.session.execute(text('''select isbn,book_name,author,publication
                 from books,issued_books
                 where isbnissue=isbn and available_copies=0
-                order by book_name asc''')
+                order by book_name asc'''))
             return render_template('admin/unavilable.html',books=books)
 
 @app.route('/admin/returnBook/<erp>/<isbn>',methods=['GET','POST'])
@@ -375,10 +375,10 @@ def returnBook(erp,isbn):
 @login_required
 def issueRequest():
     if request.method=='GET':
-        books=db.session.execute('''select erp,name,isbn,book_name,author,publication,date 
+        books=db.session.execute(text('''select erp,name,isbn,book_name,author,publication,date 
             from books,issued_books,user
             where isbnissue=isbn and erpissue=erp and status='Pending' 
-            order by date asc''')   
+            order by date asc'''))   
         return render_template('admin/issueRequest.html',books=books)
 
 @app.route('/admin/issueBook/<erp>/<isbn>',methods=['GET','POST'])
@@ -427,9 +427,9 @@ def cancelBook(erp,isbn):
 def userDashboard():
     user=current_user
     erp=user.erp
-    books=db.session.execute('''select isbn,book_name,author,publication,date
+    books=db.session.execute(text('''select isbn,book_name,author,publication,date
         from books,issued_books
-        where isbnissue=isbn and erpissue= :erp and status='Issued' ''',
+        where isbnissue=isbn and erpissue= :erp and status='Issued' '''),
         {'erp':erp})
     return render_template("user/dashboard.html",user=user,books=books)
 
@@ -475,9 +475,9 @@ def issueBookUser(isbn):
 @login_required
 def issueRequestUser():
     erp=current_user.erp
-    books=db.session.execute('''select isbn,book_name,author,publication,date
+    books=db.session.execute(text('''select isbn,book_name,author,publication,date
         from books,issued_books
-        where isbnissue=isbn and erpissue= :erp and status='Pending' ''',
+        where isbnissue=isbn and erpissue= :erp and status='Pending' '''),
         {'erp':erp})
     return render_template('user/issueRequest.html',books=books)    
 
@@ -510,13 +510,13 @@ def cancelBookUser(isbn):
 def historyUser():
 
     erp = current_user.erp
-    books=db.session.execute('''select isbn,book_name,author,publication,date,status
+    books=db.session.execute(text('''select isbn,book_name,author,publication,date,status
         from books,history
-        where isbnissue=isbn and erpissue= :erp ''',
+        where isbnissue=isbn and erpissue= :erp '''),
         {'erp':erp})
 
     return render_template("user/history.html", user=current_user, books=books)
   
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
