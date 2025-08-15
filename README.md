@@ -92,21 +92,25 @@ Manual process of keeping student records, book records, account details, managi
        - [![GMAIL](https://img.shields.io/badge/gmail-%40ranjeet_deshmukh-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=ranjeetv1106@gmail.com)
         - [![LINKEDIN](https://img.shields.io/badge/connect-%40ranjeet_deshmukh-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/ranjeet-deshmukh-b9b114266)
         - [![GITHUB](https://img.shields.io/badge/follow-%40ranjeet1106-white?style=plastic&logo=github&labelColor=black)](https://github.com/RANJEET1106)
+     
+    - SUSHANT ZAMBARE
+        - [![GMAIL](https://img.shields.io/badge/gmail-%40sushant_zambare-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=sushantzambare1234@gmail.com)
+        - [![LINKEDIN](https://img.shields.io/badge/connect-%40sushant_zambare-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/sushant-zambare-7711b2257)
+        - [![GITHUB](https://img.shields.io/badge/follow-%40sushant--zambare-white?style=plastic&logo=github&labelColor=black)](https://github.com/Sushant-Zambare)
 
-    - ANISH BHUJBAl
-        - [![GMAIL](https://img.shields.io/badge/gmail-%40anish_bhujbal-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=anishbhujbal77@gmail.com)
-        - [![LINKEDIN](https://img.shields.io/badge/connect-%40anish_bhujbal-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/anish-bhujbal-2aa36b276)
+    
 
 - **Frontend**
     - SHUBHAM DAREKAR
         - [![GMAIL](https://img.shields.io/badge/gmail-%40shubham_darekar-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=darekarshubham2005@gmail.com)
         - [![LINKEDIN](https://img.shields.io/badge/connect-%40shubham_darekar-green?style=plastic&logo=linkedin&labelColor=blue)]( https://www.linkedin.com/in/shubham-darekar-236424257)
         - [![GITHUB](https://img.shields.io/badge/follow-%40Shubham0D4-white?style=plastic&logo=github&labelColor=black)](https://github.com/Shubham0D4)
+     
+    - ANISH BHUJBAl
+        - [![GMAIL](https://img.shields.io/badge/gmail-%40anish_bhujbal-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=anishbhujbal77@gmail.com)
+        - [![LINKEDIN](https://img.shields.io/badge/connect-%40anish_bhujbal-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/anish-bhujbal-2aa36b276)
 
-    - SUSHANT ZAMBARE
-        - [![GMAIL](https://img.shields.io/badge/gmail-%40sushant_zambare-grey?style=plastic&logo=gmail&labelColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=sushantzambare1234@gmail.com)
-        - [![LINKEDIN](https://img.shields.io/badge/connect-%40sushant_zambare-green?style=plastic&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/sushant-zambare-7711b2257)
-        - [![GITHUB](https://img.shields.io/badge/follow-%40sushant--zambare-white?style=plastic&logo=github&labelColor=black)](https://github.com/Sushant-Zambare)
+    
 
 
 ## Oh, Thanks!
